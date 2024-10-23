@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects"
+           xmlns="http://www.cibertec.edu.pe/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:element name="getTarjetasRequest">
+        <xs:complexType>
+            <xs:sequence>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getTarjetasResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="tarjeta" type="TarjetaCreditoType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="TarjetaCreditoType">
+        <xs:sequence>
+            <xs:element name="id_tarjeta" type="xs:int"/>
+            <xs:element name="id_cliente" type="xs:int"/>
+            <xs:element name="numero_tarjeta" type="xs:string"/>
+            <xs:element name="fecha_vencimiento" type="xs:string"/>
+            <xs:element name="limite_credito" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

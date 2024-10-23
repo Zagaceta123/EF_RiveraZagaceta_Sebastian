@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.22 a las 10:23:53 PM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:postClienteRequest">
+      <class ref="pe.edu.cibertec.ws.objects.PostClienteRequest"/>
+    </bindings>
+    <bindings scd="~tns:ClienteType">
+      <class ref="pe.edu.cibertec.ws.objects.ClienteType"/>
+    </bindings>
+    <bindings scd="tns:updateClienteRequest">
+      <class ref="pe.edu.cibertec.ws.objects.UpdateClienteRequest"/>
+    </bindings>
+    <bindings scd="tns:postClienteResponse">
+      <class ref="pe.edu.cibertec.ws.objects.PostClienteResponse"/>
+    </bindings>
+    <bindings scd="tns:updateClienteResponse">
+      <class ref="pe.edu.cibertec.ws.objects.UpdateClienteResponse"/>
+    </bindings>
+    <bindings scd="tns:getPrestamosRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetPrestamosRequest"/>
+    </bindings>
+    <bindings scd="tns:getPrestamosResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetPrestamosResponse"/>
+    </bindings>
+    <bindings scd="~tns:PrestamoType">
+      <class ref="pe.edu.cibertec.ws.objects.PrestamoType"/>
+    </bindings>
+    <bindings scd="tns:getTarjetasRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetTarjetasRequest"/>
+    </bindings>
+    <bindings scd="tns:getTarjetasResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetTarjetasResponse"/>
+    </bindings>
+    <bindings scd="~tns:TarjetaCreditoType">
+      <class ref="pe.edu.cibertec.ws.objects.TarjetaCreditoType"/>
+    </bindings>
+  </bindings>
+</bindings>
+

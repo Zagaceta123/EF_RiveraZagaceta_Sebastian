@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects"
+           xmlns="http://www.cibertec.edu.pe/ws/objects"
+           elementFormDefault="qualified">
+
+    <xs:element name="getPrestamosRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="idCliente" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getPrestamosResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="prestamos" type="PrestamoType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="PrestamoType">
+        <xs:sequence>
+            <xs:element name="id_prestamo" type="xs:int"/>
+            <xs:element name="id_cliente" type="xs:int"/>
+            <xs:element name="monto_prestamo" type="xs:double"/>
+            <xs:element name="tasa_interes" type="xs:double"/>
+            <xs:element name="fecha_otorgamiento" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
